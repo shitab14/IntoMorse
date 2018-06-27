@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hexadecimic.foogle.intomorse.MainActivity"
+    android:background="@android:color/background_dark">
+
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="36sp"
+        android:textColor="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        tools:onClick="onClick (MainActivity)"
+        android:layout_marginBottom="91dp"
+        android:hint="Press to translate"
+        android:textColorHint="@android:color/background_light"
+        android:textAlignment="center"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/radio"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <RadioButton
+        android:text="English to Morse Code"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/background_light"
+        android:buttonTint="@android:color/white"/>
+
+        <RadioButton
+            android:text="Morse Code to English"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:layout_above="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/background_light"
+            android:buttonTint="@android:color/white"/>
+
+    </RadioGroup>
+
+    <Button
+        android:text="PLAY CODE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginBottom="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_height="50dp"
+        android:hint="Type here"
+        android:textColorHint="@android:color/background_light"
+        android:textAlignment="center"
+        android:layout_above="@+id/radio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>
